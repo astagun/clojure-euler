@@ -1,5 +1,6 @@
 (ns clojure-euler.test.problems
   (:use [clojure-euler.problem-1])
+  (:use [clojure-euler.problem-6])
   (:use [clojure-euler.problem-16])
   (:use [clojure-euler.problem-20])
   (:use [clojure-euler.problem-52])
@@ -8,6 +9,9 @@
 
 (deftest test-problem-1
   (is (= 23 (problem-1 10))))
+
+(deftest test-problem-6
+  (is (= 2640 (problem-6 10))))
 
 (deftest test-problem-20
   (is (= 27 (problem-20 10))))
