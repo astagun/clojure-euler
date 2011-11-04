@@ -3,6 +3,7 @@
   (:use [clojure-euler.problem-6])
   (:use [clojure-euler.problem-16])
   (:use [clojure-euler.problem-20])
+  (:use [clojure-euler.problem-48])
   (:use [clojure-euler.problem-52])
   (:use [clojure.test]))
 
@@ -18,6 +19,9 @@
 
 (deftest test-problem-16
   (is (= 26 (problem-16 15))))
+
+(deftest test-problem-48
+  (is (= "0405071317" (problem-48 10))))
 
 (deftest test-problem-52
   (is (= 125874 (problem-52 '(1 2)))))
