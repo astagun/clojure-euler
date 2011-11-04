@@ -8,10 +8,12 @@
       n
       (recur (inc n)))))
 
-(defn problem-52-solve []
+(defn solve-problem-52 []
   (println (time (problem-52 (range 2 7)))))
 
-; possible optimization:
-; some multiples (e.g. 6x) might be so large that its
+; TODO
+; optimization:
+;
+; some multiples (e.g. 6x) might be so large that it's
 ; digit count (length) increases
-; we should not check those
+; -> we should not check those
