@@ -17,3 +17,11 @@
       acc
       (recur (* acc n) (dec n)))))
 
+(defn combinations
+  "returns the number of combinations of length r in n for r<=n"
+  [n r]
+  (when (<= r n)
+    (/ (factorial n)
+       (* (factorial r) (factorial (- n r))))))
+
+
